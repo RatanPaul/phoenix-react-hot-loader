@@ -1,13 +1,11 @@
-import {Socket} from "phoenix"
+import React, { Component } from 'react'
 
-// let socket = new Socket("/ws")
-// socket.connect()
-// let chan = socket.chan("topic:subtopic", {})
-// chan.join().receive("ok", chan => {
-//   console.log("Success!")
-// })
-
-let App = {
+export default class App extends Component {
+  render () {
+    return (
+      <div>
+        <h1>This app is hot!</h1>
+      </div>
+    )
+  }
 }
-
-export default App
