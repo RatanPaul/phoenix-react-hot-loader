@@ -7,7 +7,7 @@ var prod = env === 'prod'
 var entry = './web/static/js/bundle.js'
 var plugins = [new webpack.NoErrorsPlugin()]
 var loaders = ['babel']
-var publicPath = 'http://localhost:4001'
+var publicPath = 'http://localhost:4001/'
 
 if (prod) {
   plugins.push(new webpack.optimize.UglifyJsPlugin())
