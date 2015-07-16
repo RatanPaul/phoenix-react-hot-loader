@@ -1,8 +1,1 @@
-# MyApp
-
-To start your new Phoenix application:
-
-1. Install dependencies with `mix deps.get`
-2. Start Phoenix endpoint with `mix phoenix.server`
-
-Now you can visit `localhost:4000` from your browser.
+See http://mikker.github.io/2015/07/16/react-hot-loader-and-phoenix.html
