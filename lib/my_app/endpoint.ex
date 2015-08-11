@@ -32,5 +32,5 @@ defmodule MyApp.Endpoint do
     key: "_my_app_key",
     signing_salt: "zfMXCSIa"
 
-  plug :router, MyApp.Router
+  plug MyApp.Router
 end

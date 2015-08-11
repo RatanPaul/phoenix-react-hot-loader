@@ -32,4 +32,4 @@ config :my_app, MyApp.Repo,
   username: "postgres",
   password: "postgres",
   database: "my_app_dev",
-  size: 10 # The amount of database connections in the pool
+  pool_size: 10 # The amount of database connections in the pool

@@ -5,7 +5,12 @@ var env = process.env.MIX_ENV || 'dev'
 var prod = env === 'prod'
 
 var entry = './web/static/js/bundle.js'
-var plugins = [new webpack.NoErrorsPlugin()]
+var plugins = [
+  new webpack.NoErrorsPlugin(),
+  new webpack.DefinePlugin({
+    __PROD__: prod
+  })
+]
 var loaders = ['babel']
 var publicPath = 'http://localhost:4001/'
 
@@ -18,6 +23,7 @@ if (prod) {
 
 module.exports = {
   devtool: prod ? null : 'eval-sourcemaps',
+  color: true,
   entry: prod ? entry : [
     'webpack-dev-server/client?' + publicPath,
     'webpack/hot/only-dev-server',
