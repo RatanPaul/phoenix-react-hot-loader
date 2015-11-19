@@ -30,11 +30,11 @@ defmodule MyApp.Mixfile do
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "~> 0.16"},
+    [{:phoenix, "~> 1.0.3"},
+     {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:phoenix_ecto, "~> 1.0"},
      {:postgrex, "~> 0.9"},
      {:phoenix_html, "~> 2.1"},
-     {:phoenix_live_reload, "~> 0.6", only: :dev},
      {:cowboy, "~> 1.0"}]
   end
 end
